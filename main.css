@@ -1,0 +1,85 @@
+:root {
+  --font-size: 2.0rem;
+  --font-size--mobile: 1.6rem;
+  --line-height: 1.08;
+
+  --margin: 3.2rem;
+  --margin--mobile: 1.6rem;
+
+  --columns: 4;
+  --columns--mobile: 2;
+
+  --font-family: Arial, sans-serif;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; /* Now 10px = 1rem! */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  line-height: var(--line-height);
+
+  min-height: 100vh;
+  background-image: url("./images/background/Stan\ Douglas\ _Monodramas\ Gary\ 2.png");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.images__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.images__list__item {
+  width: calc(100vw / var(--columns));
+  height: calc(100vw / var(--columns));
+  padding: var(--margin);
+}
+
+.images__list__item img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
+
+.tooltip {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  background: #fff;
+  color: #000;
+  padding: calc(0.25 * var(--margin));
+}
+
+.tooltip.active {
+  display: block;
+}
+
+@media screen and (max-width: 768px) {
+  :root {
+    --margin: var(--margin--mobile);
+    --font-size: var(--font-size--mobile);
+    --columns: var(--columns--mobile);
+  }
+}
