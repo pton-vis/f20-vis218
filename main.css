@@ -3,7 +3,7 @@
   --font-size--mobile: 1.6rem;
   --line-height: 1.08;
 
-  --margin: 3.2rem;
+  --margin: 3.0rem;
   --margin--mobile: 1.6rem;
 
   --columns: 4;
@@ -40,7 +40,6 @@ body {
 
 ul {
   list-style-type: none;
-  width: 100%;
 }
 
 .images__list {
