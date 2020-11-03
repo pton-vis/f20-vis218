@@ -47,13 +47,13 @@ ul {
   flex-wrap: wrap;
 }
 
-.images__list__item {
+.image_ {
   width: calc(100vw / var(--columns));
   height: calc(100vw / var(--columns));
   padding: var(--margin);
 }
 
-.images__list__item img {
+.image_ img {
   display: block;
   width: 100%;
   height: 100%;
